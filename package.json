@@ -1,0 +1,23 @@
+{
+  "name": "cypress-pom-fixtures-hooks",
+  "version": "1.0.0",
+  "description": "Scalable Cypress automation setup showcasing POM, fixtures, and hooks with dynamic test cases.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QA-Automation-Hub/cypress-pom-fixtures-hooks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QA-Automation-Hub/cypress-pom-fixtures-hooks/issues"
+  },
+  "homepage": "https://github.com/QA-Automation-Hub/cypress-pom-fixtures-hooks#readme",
+  "devDependencies": {
+    "cypress": "^15.2.0"
+  }
+}
