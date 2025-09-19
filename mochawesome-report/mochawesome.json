@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-19T15:59:13.675Z",
+    "end": "2025-09-19T15:59:20.147Z",
+    "duration": 6472,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95fb415f-9ec6-416e-8a3a-7c462c0b0e15",
+      "title": "",
+      "fullFile": "cypress/e2e/LoginTests.cy.js",
+      "file": "cypress/e2e/LoginTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bd4a615e-01c9-4b3b-b1e5-d0a13cbdc876",
+          "title": "Login Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Case: valid login",
+              "fullTitle": "Login Tests Case: valid login",
+              "timedOut": null,
+              "duration": 1754,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(row.username, row.password);\nswitch (row.expected) {\n  case 'success':\n    cy.url().should('include', '/inventory.html');\n    _LoginPage.default.inventory().should('be.visible', {\n      timeout: 10000\n    });\n    break;\n  case 'locked':\n    _LoginPage.default.error().should('contain.text', 'locked out');\n    break;\n  case 'username_required':\n    _LoginPage.default.error().should('contain.text', 'Username is required');\n    break;\n  case 'password_required':\n    _LoginPage.default.error().should('contain.text', 'Password is required');\n    break;\n  default:\n    _LoginPage.default.error().should('contain.text', 'Username and password do not match');\n}",
+              "err": {},
+              "uuid": "2ab2273f-f842-4843-80c1-ba0ef950d541",
+              "parentUUID": "bd4a615e-01c9-4b3b-b1e5-d0a13cbdc876",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Case: locked out user",
+              "fullTitle": "Login Tests Case: locked out user",
+              "timedOut": null,
+              "duration": 1066,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(row.username, row.password);\nswitch (row.expected) {\n  case 'success':\n    cy.url().should('include', '/inventory.html');\n    _LoginPage.default.inventory().should('be.visible', {\n      timeout: 10000\n    });\n    break;\n  case 'locked':\n    _LoginPage.default.error().should('contain.text', 'locked out');\n    break;\n  case 'username_required':\n    _LoginPage.default.error().should('contain.text', 'Username is required');\n    break;\n  case 'password_required':\n    _LoginPage.default.error().should('contain.text', 'Password is required');\n    break;\n  default:\n    _LoginPage.default.error().should('contain.text', 'Username and password do not match');\n}",
+              "err": {},
+              "uuid": "b9b4ff29-5557-4f40-9832-50d53ab7301c",
+              "parentUUID": "bd4a615e-01c9-4b3b-b1e5-d0a13cbdc876",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Case: empty username",
+              "fullTitle": "Login Tests Case: empty username",
+              "timedOut": null,
+              "duration": 690,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(row.username, row.password);\nswitch (row.expected) {\n  case 'success':\n    cy.url().should('include', '/inventory.html');\n    _LoginPage.default.inventory().should('be.visible', {\n      timeout: 10000\n    });\n    break;\n  case 'locked':\n    _LoginPage.default.error().should('contain.text', 'locked out');\n    break;\n  case 'username_required':\n    _LoginPage.default.error().should('contain.text', 'Username is required');\n    break;\n  case 'password_required':\n    _LoginPage.default.error().should('contain.text', 'Password is required');\n    break;\n  default:\n    _LoginPage.default.error().should('contain.text', 'Username and password do not match');\n}",
+              "err": {},
+              "uuid": "6c21cdfe-6d82-4f7e-9970-b00cc9b79976",
+              "parentUUID": "bd4a615e-01c9-4b3b-b1e5-d0a13cbdc876",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Case: empty password",
+              "fullTitle": "Login Tests Case: empty password",
+              "timedOut": null,
+              "duration": 698,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(row.username, row.password);\nswitch (row.expected) {\n  case 'success':\n    cy.url().should('include', '/inventory.html');\n    _LoginPage.default.inventory().should('be.visible', {\n      timeout: 10000\n    });\n    break;\n  case 'locked':\n    _LoginPage.default.error().should('contain.text', 'locked out');\n    break;\n  case 'username_required':\n    _LoginPage.default.error().should('contain.text', 'Username is required');\n    break;\n  case 'password_required':\n    _LoginPage.default.error().should('contain.text', 'Password is required');\n    break;\n  default:\n    _LoginPage.default.error().should('contain.text', 'Username and password do not match');\n}",
+              "err": {},
+              "uuid": "6ca35706-48f5-4748-a37b-67b0fcd11784",
+              "parentUUID": "bd4a615e-01c9-4b3b-b1e5-d0a13cbdc876",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Case: wrong password",
+              "fullTitle": "Login Tests Case: wrong password",
+              "timedOut": null,
+              "duration": 880,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(row.username, row.password);\nswitch (row.expected) {\n  case 'success':\n    cy.url().should('include', '/inventory.html');\n    _LoginPage.default.inventory().should('be.visible', {\n      timeout: 10000\n    });\n    break;\n  case 'locked':\n    _LoginPage.default.error().should('contain.text', 'locked out');\n    break;\n  case 'username_required':\n    _LoginPage.default.error().should('contain.text', 'Username is required');\n    break;\n  case 'password_required':\n    _LoginPage.default.error().should('contain.text', 'Password is required');\n    break;\n  default:\n    _LoginPage.default.error().should('contain.text', 'Username and password do not match');\n}",
+              "err": {},
+              "uuid": "a25eff46-6ac6-4467-a2da-751a8af0fca5",
+              "parentUUID": "bd4a615e-01c9-4b3b-b1e5-d0a13cbdc876",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ab2273f-f842-4843-80c1-ba0ef950d541",
+            "b9b4ff29-5557-4f40-9832-50d53ab7301c",
+            "6c21cdfe-6d82-4f7e-9970-b00cc9b79976",
+            "6ca35706-48f5-4748-a37b-67b0fcd11784",
+            "a25eff46-6ac6-4467-a2da-751a8af0fca5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5088,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.0"
+    }
+  }
+}

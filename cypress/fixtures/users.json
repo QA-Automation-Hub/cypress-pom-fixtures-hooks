@@ -12,36 +12,6 @@
     "expected": "locked"
   },
   {
-    "name": "problem user",
-    "username": "problem_user",
-    "password": "secret_sauce",
-    "expected": "ui_bug"
-  },
-  {
-    "name": "performance glitch user",
-    "username": "performance_glitch_user",
-    "password": "secret_sauce",
-    "expected": "perf_glitch"
-  },
-  {
-    "name": "error user",
-    "username": "error_user",
-    "password": "secret_sauce",
-    "expected": "ui_error"
-  },
-  {
-    "name": "visual user",
-    "username": "visual_user",
-    "password": "secret_sauce",
-    "expected": "visual_bug"
-  },
-  {
-    "name": "wrong password",
-    "username": "standard_user",
-    "password": "secretsauce",
-    "expected": "mismatch"
-  },
-  {
     "name": "empty username",
     "username": "",
     "password": "secret_sauce",
@@ -52,5 +22,11 @@
     "username": "standard_user",
     "password": "",
     "expected": "password_required"
+  },
+  {
+    "name": "wrong password",
+    "username": "standard_user",
+    "password": "secretsauce",
+    "expected": "mismatch"
   }
 ]

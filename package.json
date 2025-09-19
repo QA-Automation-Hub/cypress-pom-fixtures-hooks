@@ -18,6 +18,14 @@
   },
   "homepage": "https://github.com/QA-Automation-Hub/cypress-pom-fixtures-hooks#readme",
   "devDependencies": {
-    "cypress": "^15.2.0"
-  }
+    "cypress": "^15.2.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.3.0"
+  },
+  "scripts": {
+  "cypress:run": "cypress run --reporter mochawesome --reporter-options overwrite=false,html=false,json=true",
+  "report:merge": "mochawesome-merge cypress/reports/*.json > cypress/reports/report.json",
+  "report:generate": "marge cypress/reports/report.json -f report -o cypress/reports"
+}
 }
